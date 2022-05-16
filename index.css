@@ -1,0 +1,180 @@
+*
+{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+
+.main
+{
+  width:100%;
+  padding:1rem;
+}
+
+#navbar
+{
+  width:100%;
+  padding:1rem;
+  background:linear-gradient(50deg, dodgerblue, crimson);
+  border-radius:0 0 5px 5px;
+  position:fixed;
+  top:0;
+  bottom:520px;
+  left:0;
+  right:0;
+}
+#navbar ul
+{
+  padding:1rem;
+  display:flex;
+  justify-content:flex-end;
+}
+#navbar ul li
+{
+  list-style:none;
+  padding:10px;
+}
+#navbar ul li a
+{
+  padding:20px;
+  text-decoration:none;
+  margin-left:15px;
+  font-size:20px;
+  font-weight:bold;
+  color:white;
+}
+#navbar ul li:hover
+{
+  text-decoration:underline;
+}
+
+
+#welcome-section
+{
+  width:100%;
+  height:80vh;
+  background:linear-gradient(50deg, dodgerblue, deeppink);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#welcome-section #h1
+{
+  padding:2rem;
+}
+#welcome-section #h1 h1
+{
+  padding:1rem;
+  font-size:40px;
+  color:white;
+}
+#welcome-section #h1 h4
+{
+  margin-left:40px;
+  font-size:30px;
+}
+
+
+#projects
+{
+  width:100%;
+  height:100%;
+  padding:1rem;
+  background:linear-gradient(50deg, grey, white);
+}
+#projects h3
+{
+  text-align:center;
+  font-size:35px;
+  padding:1rem;
+  margin-bottom:1rem;
+}
+#portfolios
+{
+  width:100%;
+  padding:1rem;
+  display:flex;
+  justify-content:center;
+}
+#portfolios #links
+{
+  width:300px;
+  height:300px;
+  background:white;
+  margin:0.6rem;
+  box-shadow:8px 8px 8px rgba(0,0,0,0.5);
+  border-radius:6px;
+  border:2px solid white;
+  font-size:20px;
+}
+#portfolios #links a
+{
+  text-decoration:none;
+  color:deeppink;
+}
+#portfolios #links:hover
+{
+  transform:scale(1.1);
+  cursor:pointer;
+}
+
+#contact
+{
+  width:100%;
+  height:;
+  padding:1rem;
+  margin-top:0.3rem;
+  background:linear-gradient(35deg, white, black);
+}
+#contact h1
+{
+  text-align:center;
+  color:white;
+  padding:1rem;
+}
+
+#contact #cont-links
+{
+  padding:1rem;
+}
+#contact #cont-links a
+{
+  padding:2rem;
+  text-decoration:none;
+  box-shadow:9px 9px 9px rgba(0,0,0,0.4);
+  margin:10px;
+  background:white;
+  border-radius:8px;
+}
+#contact #cont-links a i:hover
+{
+  transform:scale(1.5);
+}
+
+
+
+
+@media(max-width:700px)
+{
+  #navbar
+  {
+    position:relative;
+    width:100%;
+  }
+  #navbar ul
+  {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+  }
+  #portfolios
+  {
+    display:flex;
+    flex-wrap:wrap;
+  }
+  #cont-links
+  {
+    display:flex;
+    flex-wrap:wrap;
+  }
+}
